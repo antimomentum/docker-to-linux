@@ -3,6 +3,7 @@ LABEL com.iximiuz-project="docker-to-linux"
 RUN apt-get -y update
 RUN apt-get -y install --no-install-recommends \
   linux-image-amd64 \
-  systemd-sysv
+  systemd-sysv \
+  iproute2
 RUN echo "root:root" | chpasswd
 
