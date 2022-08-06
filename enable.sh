@@ -1,6 +1,6 @@
 PUB=""
 GWAY=""
-NEWFACE""
+NEWFACE=""
 ip addr add $PUB dev $NEWFACE
 ip link set dev $NEWFACE up
 ip route add $GWAY dev $NEWFACE
