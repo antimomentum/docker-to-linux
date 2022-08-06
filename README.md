@@ -124,8 +124,11 @@ will show the disk size is still only 1GB. To get the full size of your install 
 
 Finally to get the Linode online there is a script at /enable.sh from the image. It requires 3 things:
 
+
 PUB is the public ip for the linode server
+
 GWAY is the gateway ip for the linode
+
 NEWFACE is the public interface name on the linode itself, usually eth0 or enp0s4. To check names do:
 
     ip a
@@ -134,3 +137,13 @@ change the nameserver ip if needed.
 
 
 With all 3 in ./enable you can run it and networking should work, try apt update
+
+
+Linode docs:
+
+
+https://www.linode.com/docs/guides/install-a-custom-distribution-on-a-linode/#linode-manager-compatibility
+
+
+
+https://www.linode.com/docs/products/tools/images/guides/upload-an-image/#requirements-and-considerations
