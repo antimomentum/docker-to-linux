@@ -21,6 +21,9 @@ alpine: alpine.img
 %.dir: %.tar
 	@echo ${COL_GRN}"[Extract $* tar archive]"${COL_END}
 	mkdir -p $*.dir
+	mkdir tarbackup
+	gzip $*.tar && mv $*.tar.gz tarbackup
+	wait
 	tar -xvf $*.tar -C $*.dir
 
 %.img: builder %.dir
@@ -68,4 +71,3 @@ clean-docker-images:
 	else\
 		echo "<noop>";\
 	fi
-
