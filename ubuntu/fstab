@@ -1,0 +1,4 @@
+# &lt;file system&gt; &lt;mount point&gt;   &lt;type&gt;  &lt;options&gt;                  &lt;dump&gt;  &lt;pass&gt;
+    proc        /proc           proc    defaults                    0       0
+    /dev/sda    /               ext4    noatime,errors=remount-ro   0       1
+    /dev/sdb    none            swap    sw
