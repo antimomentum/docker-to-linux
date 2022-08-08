@@ -22,7 +22,8 @@ alpine: alpine.img
 	@echo ${COL_GRN}"[Extract $* tar archive]"${COL_END}
 	mkdir -p $*.dir
 	mkdir tarbackup
-	gzip $*.tar && mv $*.tar.gz tarbackup
+	cp $*.tar tarbackup/
+	gzip tarbackup/$*.tar
 	wait
 	tar -xvf $*.tar -C $*.dir
 
