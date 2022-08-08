@@ -77,7 +77,7 @@ Check out `Makefile` for more details or read my article on <a href="https://ixi
 
 ## Anti's additions:
 
-The Ubuntu image is now made for Linode compatibility. The files I've included to this are based on Linode documentation which I'll link below a summary of the instructions.
+The Ubuntu and Debian images are now made for Linode compatibility. The files I've included to this are based on Linode documentation which I'll link below a summary of the instructions.
 
     make ubuntu
     gzip ubuntu.img
