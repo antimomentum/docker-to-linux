@@ -23,6 +23,7 @@ alpine: alpine.img
 	mkdir -p $*.dir
 	mkdir tarbackup
 	cp $*.tar tarbackup/
+	wait
 	gzip tarbackup/$*.tar
 	wait
 	tar -xvf $*.tar -C $*.dir
