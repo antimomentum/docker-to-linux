@@ -8,7 +8,10 @@ REPO=docker-to-linux
 debian: debian.img
 
 .PHONY:
-ubuntu: ubuntu.img
+ubuntu18: ubuntu18.img
+
+.PHONY:
+ubuntu20: ubuntu20.img
 
 .PHONY:
 alpine: alpine.img

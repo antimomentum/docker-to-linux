@@ -79,7 +79,7 @@ Check out `Makefile` for more details or read my article on <a href="https://ixi
 
 The Ubuntu and Debian images are now made for Linode compatibility. The files I've included to this are based on Linode documentation which I'll link below a summary of the instructions.
 
-    make ubuntu
+    make ubuntu18
     gzip ubuntu.img
 
 Then upload the image to Linode either through the browser or cli. 

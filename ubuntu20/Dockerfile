@@ -8,8 +8,8 @@ RUN apt-get update -y && \
   systemd-sysv \
   iproute2
 RUN echo "root:root" | chpasswd
-COPY ubuntu/fstab /etc/fstab
-COPY ubuntu/grub.cfg /boot/grub/grub.cfg
-COPY ubuntu/grub /etc/default/grub
-COPY ubuntu/enable.sh enable.sh
+COPY ubuntu20/fstab /etc/fstab
+COPY ubuntu20/grub.cfg /boot/grub/grub.cfg
+COPY ubuntu20/grub /etc/default/grub
+COPY ubuntu20/enable.sh enable.sh
 RUN chmod +x enable.sh
