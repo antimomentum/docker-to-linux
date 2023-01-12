@@ -87,7 +87,7 @@ Then upload the image to Linode either through the browser or cli.
 Once the image is done uploading and being processed deploy the image to a Linode. Boot from Direct Disk. From the Lish console go to Glish and login as root with password root. Then:
 
 
-    password
+    passwd
 
 
 This may be needed, but isn't always:
