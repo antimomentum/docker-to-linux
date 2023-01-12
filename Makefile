@@ -16,6 +16,9 @@ ubuntu20: ubuntu20.img
 .PHONY:
 alpine: alpine.img
 
+.PHONY:
+rootless-docker: rootless-docker.img
+
 %.tar:
 	@echo ${COL_GRN}"[Dump $* directory structure to tar archive]"${COL_END}
 	docker build -f $*/Dockerfile -t ${REPO}/$* .
