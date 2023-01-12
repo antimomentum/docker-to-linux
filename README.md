@@ -155,6 +155,11 @@ Once booted you may need to re-install uidmap and re-chown the testuser's home d
     chown -R testuser: /home/testuser
 
 
+
+## References
+
+
+
 Linode docs:
 
 
@@ -163,3 +168,9 @@ https://www.linode.com/docs/guides/install-a-custom-distribution-on-a-linode/#li
 
 
 https://www.linode.com/docs/products/tools/images/guides/upload-an-image/#requirements-and-considerations
+
+
+Rootless Docker:
+
+
+https://docs.docker.com/engine/security/rootless/
