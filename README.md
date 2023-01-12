@@ -87,8 +87,12 @@ Then upload the image to Linode either through the browser or cli.
 Once the image is done uploading and being processed deploy the image to a Linode. Boot from Direct Disk. From the Lish console go to Glish and login as root with password root. Then:
 
 
-    mount -o remount,rw /
     password
+
+
+This may be needed, but isn't always:
+
+    mount -o remount,rw /
 
 This will make the filesystem writeable and allow you to change to a more secure password before the image is brought online, which happens later.
 
@@ -137,6 +141,18 @@ change the nameserver ip if needed.
 
 
 With all 3 in ./enable you can run it and networking should work, try apt update
+
+
+
+## Rootless Docker
+
+
+Once booted you may need to re-install uidmap and re-chown the testuser's home directory for testuser. This may be due to how Docker handles permissions during image building.
+
+
+    apt purge uidmap
+    apt install uidmap
+    chown -R testuser: /home/testuser
 
 
 Linode docs:
