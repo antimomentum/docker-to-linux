@@ -1,6 +1,6 @@
 ## Anti's additions:
 
-The Ubuntu and Debian images are now made for Linode compatibility. The files I've included to this are based on Linode documentation which I'll link below a summary of the instructions.
+The Ubuntu and Debian images are now made for Linode compatibility (also works in WSL2 and anything else that might support GRUB2). The files I've included to this are based on Linode documentation which I'll link below a summary of the instructions.
 
     make ubuntu18
     gzip ubuntu.img
