@@ -12,4 +12,5 @@ COPY debian/fstab /etc/fstab
 COPY debian/grub.cfg /boot/grub/grub.cfg
 COPY debian/grub /etc/default/grub
 COPY debian/enable.sh enable.sh
+COPY grub2-lish.sh grub2-lish.sh
 RUN chmod +x enable.sh
